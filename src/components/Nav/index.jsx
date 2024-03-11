@@ -6,7 +6,7 @@ const Nav = () => {
     return (
         <nav className="flex items-center justify-between border-b border-gray-300 w-full p-4">
             <div className="flex items-center ml-8">
-                <img src="/src/images/david-icon.jpeg" alt="Logo" className="rounded h-10 w-10 mr-4"/>
+                <img src="./images/david-icon.jpeg" alt="Logo" className="rounded h-10 w-10 mr-4"/>
                 <button className="text-white text-2xl hover:underline">David Fletes Dev</button>
             </div>
             <div className="flex mr-6">
