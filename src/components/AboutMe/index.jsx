@@ -8,7 +8,7 @@ const AboutMe = () => {
                     alt="Foto perfil" className="rounded-xl"/></div>
                 <div className="flex flex-col px-6">
                     <h2 className="text-white font-bold text-xl mb-4">
-                        Hey i'm David <br/> Front End React Developer
+                        Hey i'm David <br/> <h2 className="bg-gradient-to-br from-sky-400 to-indigo-200 inline-block text-transparent bg-clip-text">Front End React Developer </h2> 
                     </h2>
                     <p className="text-white font-normal text-base">
                         Hi i'm David Fletes. Front End React Developer <br/>
@@ -29,7 +29,7 @@ const AboutMe = () => {
                 <div className="flex flex-col sm:flex-row justify-evenly sm:items-center mt-8 text-white">
                     <div className="h-10 my-2 mr-4 flex items-center"><img className="h-12 mr-4 bg-slate-800 rounded p-2" src="./assets/html-5.svg" alt="html icon"/> HTML</div>
                     <div className="h-10 my-2 mr-4 flex items-center"><img className="h-12 mr-4 bg-slate-800 rounded p-2" src="./assets/css-3.svg" alt="css icon"/>CSS</div>
-                    <div className="h-10 my-2 mr-4 flex items-center"><div className="min-w-12 h-12 mr-4 bg-slate-800 rounded p-2">
+                    <div className="h-10 my-2 mr-4 flex items-center"><div className="w-12 h-12 mr-4 bg-slate-800 rounded p-2">
                         <img className="animate-spin-slow" src="./assets/react.svg" alt="react-logo" /></div> REACT JS</div>
                     <div className="h-10 my-2 mr-4 flex items-center"><img className="h-12 mr-4 bg-slate-800 rounded p-2" 
                         src="./assets/tailwind-icon.svg" alt="tailwind icon" /> TAILWIND</div>
@@ -48,7 +48,7 @@ const AboutMe = () => {
                         alt="email icon" /> Telephone: +52 3314961922</div>
                     <div className="flex items-center pb-2"><img className="h-12 mr-4 bg-slate-400 rounded p-2" src="./assets/linkedin-icon.svg" 
                         alt="email icon" /><a className="hover:underline hover:underline-offset-2" href="https://www.linkedin.com/in/david-fletes-esparza-729018228">
-                            LinkedIn: www.linkedin.com/in/david-fletes-esparza-729018228</a></div>
+                            LinkedIn: linkedin.com/david-fletes</a></div>
                     <div className="flex items-center pb-2"><img className="h-12 mr-4 bg-slate-400 rounded p-2" src="./assets/github-icon.svg" 
                         alt="email icon" /><a className="hover:underline hover:underline-offset-2" href="https://www.github.com/Rosnye">Github: github.com/Rosnye </a></div>
 
