@@ -3,7 +3,7 @@ import React from "react";
 const AboutMe = () => {
     return (
         <div className="rounded-xl flex flex-col my-6 p-6">
-            <div className="flex p-4 justify-evenly border-gray-300 rounded-xl bg-gray-500 border-b border-w-">
+            <div className="flex p-4 justify-evenly ">
                 <div className="sm:block hidden h-32 w-32 bg-white items-center justify-center border border-white rounded-xl"><img src="./images/Foto_perfil.jpg" 
                     alt="Foto perfil" className="rounded-xl"/></div>
                 <div className="flex flex-col px-6">
@@ -24,7 +24,7 @@ const AboutMe = () => {
                 </div>
 
             </div>
-            <div className="border-b border-gray-300 w-full p-6 flex flex-col bg-gray-500 rounded-xl mt-2">
+            <div className="w-full p-6 flex flex-col mt-2">
                 <h2 className="text-white text-xl">Tech Skills:</h2>
                 <div className="flex flex-col sm:flex-row justify-evenly sm:items-center mt-8 text-white">
                     <div className="h-10 my-2 mr-4 flex items-center"><img className="h-12 mr-4 bg-slate-800 rounded p-2" src="./assets/html-5.svg" alt="html icon"/> HTML</div>
@@ -39,7 +39,7 @@ const AboutMe = () => {
                         src="./assets/javascript-icon.svg" alt="javascript icon" /> JAVASCRIPT</div>
                 </div>
             </div>
-            <div className="border-b border-gray-300 w-full p-6 flex flex-col bg-gray-500 rounded-xl mt-2">
+            <div className="w-full p-6 flex flex-col mt-2">
                 <h2 className="text-white text-xl">Contact Info:</h2>
                 <div className="justify-evenly items-center text-white pt-6">
                     <div className="flex items-center pb-2"><img className="h-12 mr-4 bg-slate-400 rounded p-2" src="./assets/email-icon.svg" 

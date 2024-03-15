@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="flex flex-col items-center min-h-screen bg-black">
       
-      {isActive ? <Load className="hidden"/> : <></>}
+      {isActive ? <Load/> : <></>}
       <Nav/>
       <AboutMe/>
     </div>
