@@ -26,7 +26,7 @@ const AboutMe = () => {
             </div>
             <div className="w-full p-6 flex flex-col mt-2">
                 <h2 className="text-white text-xl">Tech Skills:</h2>
-                <div className="flex flex-col sm:flex-row justify-evenly sm:items-center mt-8 text-white">
+                <div className="flex flex-col md:flex-row justify-evenly md:items-center mt-8 text-white">
                     <div className="h-10 my-2 mr-4 flex items-center"><img className="h-12 mr-4 bg-slate-800 rounded p-2" src="./assets/html-5.svg" alt="html icon"/> HTML</div>
                     <div className="h-10 my-2 mr-4 flex items-center"><img className="h-12 mr-4 bg-slate-800 rounded p-2" src="./assets/css-3.svg" alt="css icon"/>CSS</div>
                     <div className="h-10 my-2 mr-4 flex items-center"><div className="w-12 h-12 mr-4 bg-slate-800 rounded p-2">
