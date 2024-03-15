@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const timerId = setTimeout(() => {
       setIsActive(false); // Desactivar el temporizador después de ejecutarse una vez
-    }, 4000);
+    }, 300);
 
     return () => clearTimeout(timerId); // Detener el temporizador al desmontar el componente
   }, []); // El arreglo de dependencias vacío asegura que este efecto solo se ejecute una vez al montar el componente
