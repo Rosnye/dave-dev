@@ -29,8 +29,8 @@ const AboutMe = () => {
                 <div className="flex flex-col sm:flex-row justify-evenly sm:items-center mt-8 text-white">
                     <div className="h-10 my-2 mr-4 flex items-center"><img className="h-12 mr-4 bg-slate-800 rounded p-2" src="./assets/html-5.svg" alt="html icon"/> HTML</div>
                     <div className="h-10 my-2 mr-4 flex items-center"><img className="h-12 mr-4 bg-slate-800 rounded p-2" src="./assets/css-3.svg" alt="css icon"/>CSS</div>
-                    <div className="h-10 my-2 mr-4 flex items-center"><div className="min-w-12 h-12 mr-4 bg-slate-800 rounded p-2">
-                        <img className="animate-spin-slow" src="./assets/react.svg" alt="react-logo" /></div> REACT JS</div>
+                    <div className="h-10 my-2 mr-4 flex items-center"><div className="flex items-center h-12 mr-4 bg-slate-800 rounded p-2">
+                        <img className="w-8 animate-spin-slow" src="./assets/react.svg" alt="react-logo" /></div> REACT JS</div>
                     <div className="h-10 my-2 mr-4 flex items-center"><img className="h-12 mr-4 bg-slate-800 rounded p-2" 
                         src="./assets/tailwind-icon.svg" alt="tailwind icon" /> TAILWIND</div>
                     <div className="h-10 my-2 mr-4 flex items-center"><img className="h-12 mr-4 bg-slate-800 rounded p-2" 
