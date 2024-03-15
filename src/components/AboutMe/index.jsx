@@ -1,16 +1,15 @@
 import React from "react";
 
-const AboutMe = () => {
+const Info = () => {
     return (
-        <div className="rounded-xl flex flex-col my-6 p-6">
-            <div className="flex p-4 justify-evenly ">
-                <div className="sm:block hidden h-32 w-32 bg-white items-center justify-center border border-white rounded-xl"><img src="./images/Foto_perfil.jpg" 
+        <div className="flex p-4 justify-evenly ">
+                <div className="sm:block hidden w-48 bg-white items-center justify-center border border-white rounded-xl"><img src="./images/Foto_perfil.jpg" 
                     alt="Foto perfil" className="rounded-xl"/></div>
                 <div className="flex flex-col px-6">
-                    <h2 className="text-white font-bold text-xl mb-4">
+                    <h2 className="text-white font-bold text-xl xl:text-4xl mb-4">
                         Hey i'm David <br/> <h2 className="bg-gradient-to-br from-sky-400 to-indigo-200 inline-block text-transparent bg-clip-text">Front End React Developer </h2> 
                     </h2>
-                    <p className="text-white font-normal text-base">
+                    <p className="text-white font-normal text-base lg:text-2xl">
                         Hi i'm David Fletes. Front End React Developer <br/>
                         Based in Jalisco Mexico.
                     </p>
@@ -22,11 +21,15 @@ const AboutMe = () => {
                     <button><a href="https://github.com/Rosnye" className="flex items-center pb-2">
                         <img className="h-12 mr-4 bg-slate-400 rounded p-2" src="./assets/github-icon.svg" alt="email icon" /></a></button>
                 </div>
-
             </div>
-            <div className="w-full p-6 flex flex-col mt-2">
-                <h2 className="text-white text-xl">Tech Skills:</h2>
-                <div className="flex flex-col md:flex-row justify-evenly md:items-center mt-8 text-white">
+    );
+};
+
+const Skills = () => {
+    return (
+        <div className="w-full p-6 flex flex-col mt-2">
+                <h2 className="text-white text-2xl xl:text-4xl">Tech Skills:</h2>
+                <div className="flex flex-col lg:flex-row justify-evenly lg:items-center mt-8 text-white lg:text-xl">
                     <div className="h-10 my-2 mr-4 flex items-center"><img className="h-12 mr-4 bg-slate-800 rounded p-2" src="./assets/html-5.svg" alt="html icon"/> HTML</div>
                     <div className="h-10 my-2 mr-4 flex items-center"><img className="h-12 mr-4 bg-slate-800 rounded p-2" src="./assets/css-3.svg" alt="css icon"/>CSS</div>
                     <div className="h-10 my-2 mr-4 flex items-center"><div className="w-12 h-12 mr-4 bg-slate-800 rounded p-2">
@@ -39,9 +42,14 @@ const AboutMe = () => {
                         src="./assets/javascript-icon.svg" alt="javascript icon" /> JAVASCRIPT</div>
                 </div>
             </div>
-            <div className="w-full p-6 flex flex-col mt-2">
-                <h2 className="text-white text-xl">Contact Info:</h2>
-                <div className="justify-evenly items-center text-white pt-6">
+    );
+};
+
+const Contact = () => {
+    return (
+        <div className="w-full p-6 flex flex-col mt-2">
+                <h2 className="text-white text-lg lg:text-4xl">Contact Info:</h2>
+                <div className="justify-evenly items-center text-white pt-6 lg:text-xl">
                     <div className="flex items-center pb-2"><img className="h-12 mr-4 bg-slate-400 rounded p-2" src="./assets/email-icon.svg" 
                         alt="email icon" /> Email: david.fletes.dev@gmail.com</div>
                     <div className="flex items-center pb-2"><img className="h-12 mr-4 bg-slate-400 rounded p-2" src="./assets/telephone-icon.svg" 
@@ -54,6 +62,17 @@ const AboutMe = () => {
 
                 </div>
             </div>
+    );
+};
+
+const AboutMe = () => {
+    return (
+        <div className="rounded-xl flex flex-col my-6 p-6">
+            <Info/>
+
+            <Skills/>
+            
+            <Contact/>
         </div>
     );
 };
