@@ -32,33 +32,33 @@ const DropdownMenu = () => {
             </div>
 
         {isOpen && (
-            <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-gray-600 ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <div className="origin-top-right absolute right-0 mt-2 w-56 rounded bg-gradient-to-r shadow-lg from-blue-900 to-sky-800 ring-1 ring-black ring-opacity-5 focus:outline-none">
                             <div
-                            className="py-1"
+                            className=""
                             role="menu"
                             aria-orientation="vertical"
                             aria-labelledby="options-menu"
                             >
                             <button
                                 onClick={() => handleOptionClick('Opción 1')}
-                                className="block px-4 py-2 text-sm text-white w-full text-left hover:bg-gray-400"
+                                className="block px-4 py-2 text-sm text-white w-full text-left rounded-t hover:bg-gray-400"
                                 role="menuitem"
                             >
-                                Opción 1
+                                Home
                             </button>
                             <button
                                 onClick={() => handleOptionClick('Opción 2')}
                                 className="block px-4 py-2 text-sm text-white w-full text-left hover:bg-gray-400"
                                 role="menuitem"
                             >
-                                Opción 2
+                                About me
                             </button>
                             <button
                                 onClick={() => handleOptionClick('Opción 3')}
-                                className="block px-4 py-2 text-sm text-white w-full text-left hover:bg-gray-400"
+                                className="block px-4 py-2 text-sm text-white w-full text-left rounded-b hover:bg-gray-400"
                                 role="menuitem"
                             >
-                                Opción 3
+                                Projects
                             </button>
                         </div>
                     </div>
