@@ -1,12 +1,76 @@
-import React from "react";
+import React, {useState} from "react";
 {/*import logo from './logo.png'*/}
+
+
+const DropdownMenu = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const handleOptionClick = (option) => {
+        console.log(`Selected option: ${option}`);
+      // Aquí puedes añadir la lógica para manejar la opción seleccionada
+    };
+
+    return (
+        <div className="relative inline-block text-left">
+            <div>
+                <button
+                    type="button"
+                    className="inline-flex justify-center w-full rounded-md shadow-sm bg-gradient-to-br hover:bg-gradient-to-br 
+                        duration-500 hover:from-sky-400 hover:to-sky-800 from-sky-400 to-sky-200 px-4 py-2 text-sm 
+                        font-medium text-gray-700 hover:outline-none hover:ring-2 hover:ring-blue-500 hover:border-blue-500"
+                    onClick={toggleMenu}
+                >
+
+                    {isOpen ?   <img className="w-6" src="./assets/menu-open-icon.svg"/> : 
+                                <img className="duration-500 transition-transform scale-100 w-6" src="./assets/menu-closed-icon.svg"/> }
+
+                </button>
+            </div>
+
+        {isOpen && (
+            <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-gray-600 ring-1 ring-black ring-opacity-5 focus:outline-none">
+                            <div
+                            className="py-1"
+                            role="menu"
+                            aria-orientation="vertical"
+                            aria-labelledby="options-menu"
+                            >
+                            <button
+                                onClick={() => handleOptionClick('Opción 1')}
+                                className="block px-4 py-2 text-sm text-white w-full text-left hover:bg-gray-400"
+                                role="menuitem"
+                            >
+                                Opción 1
+                            </button>
+                            <button
+                                onClick={() => handleOptionClick('Opción 2')}
+                                className="block px-4 py-2 text-sm text-white w-full text-left hover:bg-gray-400"
+                                role="menuitem"
+                            >
+                                Opción 2
+                            </button>
+                            <button
+                                onClick={() => handleOptionClick('Opción 3')}
+                                className="block px-4 py-2 text-sm text-white w-full text-left hover:bg-gray-400"
+                                role="menuitem"
+                            >
+                                Opción 3
+                            </button>
+                        </div>
+                    </div>
+                )}
+            </div>
+        );
+    };
 
 const Menu = () => {
     return(
-        <div className=" hidden md:block mr-6">
-            <button className="bg-gray-900 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded">Home</button>
-            <button className="bg-gray-900 hover:bg-gray-600 text-white font-medium py-2 px-4 ml-4 rounded">About Me</button>
-            <button className="bg-gray-900 hover:bg-gray-600 text-white font-medium py-2 px-4 ml-4 rounded">Proyects</button>
+        <div className="flex flex-col relative right mr-6">
+            <DropdownMenu/>
         </div>
     )
 }

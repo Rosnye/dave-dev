@@ -23,6 +23,7 @@ function App() {
       {isActive ? <Load/> : <></>}
       <Nav/>
       <AboutMe/>
+      
     </div>
   );
 };

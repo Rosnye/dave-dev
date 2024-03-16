@@ -10,7 +10,7 @@ const Info = () => {
                         Hey i'm David <br/> <h2 className="bg-gradient-to-br from-sky-400 to-indigo-200 inline-block text-transparent bg-clip-text">Front End React Developer </h2> 
                     </h2>
                     <p className="text-white font-normal text-base lg:text-2xl">
-                        Hi i'm David Fletes. Front End React Developer <br/>
+                        I'm David Fletes. Front End React Developer <br/>
                         Based in Jalisco Mexico.
                     </p>
                 </div>
