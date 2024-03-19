@@ -23,6 +23,7 @@ const DropdownMenu = () => {
                         duration-500 hover:from-sky-400 hover:to-sky-800 from-sky-400 to-sky-200 px-4 py-2 text-sm 
                         font-medium text-gray-700 hover:outline-none hover:ring-2 hover:ring-blue-500 hover:border-blue-500"
                     onClick={toggleMenu}
+                    
                 >
 
                     {isOpen ?   <img className="w-6" src="./assets/menu-open-icon.svg"/> : 

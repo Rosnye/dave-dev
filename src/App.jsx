@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import AboutMe from './components/AboutMe'
 import Nav from './components/Nav'
 import Load from './components/Load';
+import Projects from './components/Projects';
 
 function App() {
 
@@ -23,7 +24,6 @@ function App() {
       {isActive ? <Load/> : <></>}
       <Nav/>
       <AboutMe/>
-      
     </div>
   );
 };
