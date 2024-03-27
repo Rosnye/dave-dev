@@ -19,11 +19,12 @@ function App() {
 
 
   return (
-    <div className="flex flex-col items-center min-h-screen bg-black">
+    <div className="flex flex-col items-center min-h-screen bg-Mountains bg-no-repeat bg-cover">
       
       {isActive ? <Load/> : <></>}
       <Nav/>
       <AboutMe/>
+      <Projects/>
     </div>
   );
 };
