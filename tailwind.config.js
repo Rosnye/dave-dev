@@ -6,7 +6,7 @@ export default {
       backgroundImage: {
         'fondo': "url('./src/images/fondo.jpeg')",
         'patronBg':"url('./src/assets/bgPattern.svg')",
-        'Mountains':"url('./flat-mountains.svg')",
+        'Mountains':"url('./assets/flat-mountains.svg')",
       },
       animation: {
         'spin-slow': 'spin 4s linear infinite',

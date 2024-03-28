@@ -1,6 +1,23 @@
 import React from "react";
 
+
 const Info = () => {
+
+    const cvUrl = './Resources/CV-david.pdf';
+
+    // Función para manejar la descarga del CV
+    const descargarCV = () => {
+        // Crear un elemento <a> temporal
+        const link = document.createElement('a');
+        link.href = cvUrl;
+        // Asignar el nombre del archivo
+        link.download = 'CV David Fletes.pdf';
+        // Simular clic en el enlace
+        document.body.appendChild(link);
+        link.click();
+        // Limpiar el elemento <a> temporal
+        document.body.removeChild(link);
+    };
     return (
         <div className="flex p-4 justify-evenly ">
                 <div className="sm:block hidden w-48 bg-white items-center justify-center border border-white rounded-xl">
@@ -24,6 +41,14 @@ const Info = () => {
                     <button><a href="https://github.com/Rosnye" className="flex items-center pb-2">
                         <img className="h-12 mr-4 bg-slate-400 transition duration-300 hover:bg-slate-200 hover:scale-110 rounded p-2" 
                             src="./assets/github-icon.svg" alt="email icon" /></a></button>
+                    <div>
+                        {/* Botón para descargar el CV */}
+                        <button onClick={descargarCV}>
+                            <img className="flex items-center justify-center font-bold text-2xl h-12 p-2 mr-4 bg-slate-400 transition duration-300 hover:bg-slate-200 hover:scale-110 rounded" src="./assets/CV-icon.svg" alt="CV" />
+                        </button>
+                    </div>
+                    {/*<a download={Documento} className="flex items-center justify-center font-bold text-2xl h-12 mr-4 bg-slate-400 transition duration-300 hover:bg-slate-200 hover:scale-110 rounded">
+                        CV</a> */}
                 </div>
             </div>
     );
