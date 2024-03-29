@@ -1,32 +1,21 @@
 import './App.css'
-import { useState, useEffect } from 'react';
-import AboutMe from './components/AboutMe'
-import Nav from './components/Nav'
-import Load from './components/Load';
-import Projects from './components/Projects';
+import { Route, Routes } from 'react-router-dom';
+import Nav from './components/Nav';
+import Home from './components/Home';
+import About from './components/About';
 
 function App() {
 
-  const [isActive, setIsActive] = useState(true);
-
-  useEffect(() => {
-    const timerId = setTimeout(() => {
-      setIsActive(false); // Desactivar el temporizador después de ejecutarse una vez
-    }, 300);
-
-    return () => clearTimeout(timerId); // Detener el temporizador al desmontar el componente
-  }, []); // El arreglo de dependencias vacío asegura que este efecto solo se ejecute una vez al montar el componente
-
-
   return (
-    <div className="flex flex-col items-center min-h-screen bg-Mountains bg-no-repeat bg-cover">
-      
-      {isActive ? <Load/> : <></>}
+    <div className='App flex flex-col items-center min-w-96 h-full min-h-screen bg-Mountains bg-no-repeat bg-cover'>
       <Nav/>
-      <AboutMe/>
-      <Projects/>
+      <Routes>
+        <Route path='/dave-dev/' element={<Home/>}/>
+        <Route path='/dave-dev/About/' element={<About/>}/>
+        <Route path='*' element={<h1 className='w-full p-6 text-4xl flex justify-center text-white'>404 Not Found</h1>}/>
+      </Routes>
     </div>
   );
 };
 
-export default App
+export default App;

@@ -24,10 +24,11 @@ const Info = () => {
                     <img src="./images/Foto_perfil.jpg" alt="Foto perfil" className="rounded-xl"/></div>
 
                 <div className="flex flex-col px-6">
-                    <h2 className="text-white font-bold text-xl xl:text-4xl mb-4">
-                        Hey i'm David <br/> <h2 className="bg-gradient-to-br from-sky-400 to-indigo-200 inline-block 
-                        text-transparent bg-clip-text">Front End React Developer </h2> 
+                    <h2 className="text-white font-bold text-2xl xl:text-5xl">
+                        Hey i'm David
                     </h2>
+                    <h2 className="text-2xl xl:text-5xl font-bold bg-gradient-to-br from-sky-400 to-indigo-200 inline-block 
+                        text-transparent bg-clip-text mb-4">Front End React Developer </h2> 
                     <p className="text-white font-normal text-base lg:text-2xl">
                         I'm David Fletes. Front End React Developer <br/>
                         Based in Jalisco Mexico.
@@ -108,7 +109,7 @@ const Contact = () => {
 
 const AboutMe = () => {
     return (
-        <div className="rounded-xl flex flex-col my-6 p-6">
+        <div className="rounded-xl flex flex-col p-6">
             <Info/>
             
             <Skills/>
