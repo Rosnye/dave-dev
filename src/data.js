@@ -11,7 +11,7 @@ const data = [
     {
       id: 2,
       titulo: "Anime Calendar",
-      imagen: "./images/AnimeC.jpg",
+      imagen: "./images/anime-calendar.jpg",
       descripcion: "Web app simple, hecha para enlistar series de interés.",
       url: "https://rosnye.github.io/anime-calendar/"
     },
