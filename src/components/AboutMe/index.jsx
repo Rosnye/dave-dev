@@ -42,12 +42,12 @@ const Info = () => {
                     <button><a href="https://github.com/Rosnye" className="flex items-center pb-2">
                         <img className="h-12 mr-4 bg-slate-400 transition duration-300 hover:bg-slate-200 hover:scale-110 rounded p-2" 
                             src="./assets/github-icon.svg" alt="email icon" /></a></button>
-                    <div>
                         {/* Botón para descargar el CV */}
-                        <button onClick={descargarCV}>
-                            <img className="flex items-center justify-center font-bold text-2xl h-12 p-2 mr-4 bg-slate-400 transition duration-300 hover:bg-slate-200 hover:scale-110 rounded" src="./assets/CV-icon.svg" alt="CV" />
+                    <button className="flex items-center justify-center font-bold text-2xl h-12 p-2 mr-4 bg-slate-400 transition duration-300
+                            hover:bg-slate-200 hover:scale-110 rounded" onClick={descargarCV}>
+                            <img className="hidden sm:block h-full" src="./assets/CV-icon.svg" alt="CV" />
+                            <h3 className="text-lg font-semibold ml-2">CV Inglés</h3>
                         </button>
-                    </div>
                     {/*<a download={Documento} className="flex items-center justify-center font-bold text-2xl h-12 mr-4 bg-slate-400 transition duration-300 hover:bg-slate-200 hover:scale-110 rounded">
                         CV</a> */}
                 </div>

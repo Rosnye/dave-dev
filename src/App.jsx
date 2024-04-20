@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path='/dave-dev/About/' element={<About/>}/>
         <Route path='*' element={<h1 className='w-full p-6 text-4xl flex justify-center text-white'>404 Not Found</h1>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 };
