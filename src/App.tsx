@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <div className={`bg-slate-800 min-w-dvw min-h-dvh flex flex-col items-center ${theme}`}>
+    <div className={`bg-slate-800 min-w-dvw min-h-dvh flex flex-col items-center`}>
       <Nav/>
       <Card/>
     </div>
