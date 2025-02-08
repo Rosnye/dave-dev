@@ -2,11 +2,14 @@
 
 const Nav = () => {
     return (
-        <div className="border border-black shadow-lg rounded-xl m-2 bg-gray-700 h-12 w-3/4 flex items-center justify-around">
-            <a href="https://rosnye.github.io/dave-dev/" className="text-whiteText">Dave-dev/</a>
-            <div>
-                <h3 className="text-whiteText">test</h3>
-            </div>
+        <div className="font-serif border border-black shadow-lg rounded-xl m-2 px-4 py-2 bg-gray-700 min-h-12 w-3/4 flex items-center justify-between">
+            <a href="https://rosnye.github.io/dave-dev/" className="text-whiteText">Dave<br/>Dev/</a>
+            <ul>
+                <li className="inline-block mx-2"><a href="https://rosnye.github.io/dave-dev/" className="text-whiteText">Home</a></li>
+                <li className="inline-block mx-2"><a href="https://rosnye.github.io/dave-dev/about" className="text-whiteText">About</a></li>
+                <li className="inline-block mx-2"><a href="https://rosnye.github.io/dave-dev/projects" className="text-whiteText">Projects</a></li>
+                <li className="inline-block mx-2"><a href="https://rosnye.github.io/dave-dev/contact" className="text-whiteText">Contact</a></li>
+            </ul>
         </div>
     )
 }
