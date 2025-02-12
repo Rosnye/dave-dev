@@ -1,21 +1,17 @@
-import {useState} from "react";
+import React from "react";
 
-const Card = () => {
-
-    const [cards, setCards] = useState([]);
-    
-    
-    return(
-        <div className="bg-zinc-500 border rounded-lg flex flex-col max-w-32 p-4">
-            {cards.map(card => (
-                <div className="flex flex-col items-center">
-                    <img src={card.image} alt={card.title} className="h-24 w-24" />
-                    <h1 className="text-white text-lg">{card.title}</h1>
-                    <p className="text-white text-sm">{card.description}</p>
-                </div>
-            ))}
-        </div>
-    )
+interface CardProps {
+  title: string;
+  description: string;
 }
+
+const Card: React.FC<CardProps> = ({ title, description }) => {
+  return (
+    <div className="border p-4 rounded-lg shadow-md bg-slate-300">
+      <h2 className="text-lg font-bold">{title}</h2>
+      <p className="text-gray-600">{description}</p>
+    </div>
+  );
+};
 
 export default Card;
