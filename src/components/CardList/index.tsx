@@ -6,6 +6,7 @@ interface CardItem {
   id: number;
   title: string;
   description: string;
+  image: string;
 }
 
 const CardList: React.FC = () => {
@@ -13,7 +14,7 @@ const CardList: React.FC = () => {
   return (
     <div className="flex flex-wrap justify-center gap-4 p-4">
       {cardData.map((item) => (
-        <Card key={item.id} title={item.title} description={item.description} />
+        <Card key={item.id} title={item.title} description={item.description} image={item.image} />
       ))}
     </div>
   );
