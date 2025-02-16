@@ -1,12 +1,13 @@
 import React from "react";
 
 interface CardProps {
-  title: string;
-  description: string;
-  image: string;
+  title?: string;
+  description?: string;
+  image?: string;
+  id?: number;
 }
 
-const Card: React.FC<CardProps> = ({ title, description, image }) => {
+const Card: React.FC<CardProps> = ({ title = '', description = '', image = '' }) => {
   return (
     <div className="border p-4 rounded-lg shadow-md bg-slate-300">
       <img src={image} alt={title} className="w-full h-40 object-cover rounded-t-lg" />
