@@ -9,15 +9,15 @@ function App() {
 
   return (
     <Router basename="/dave-dev">
-      <div className="min-h-dvh bg-slate-800">
-        <header className="bg-slate-900">
+      <div className="min-h-dvh bg-darkBlue">
+        <header className="bg-darkerBlue border-b border-white">
           <nav className="flex md:justify-between justify-center items-center container mx-auto px-4 py-3">
             <h1 className="hidden md:block text-white text-2xl font-bold">
               <Link to="/home" className="text-white hover:text-blue-400 transition-colors">
                 DaveDev
               </Link>
             </h1>
-            <ul className="flex gap-6 items-center justify-center">
+            <ul className="flex gap-6 items-center justify-center text-xl">
               <li>
                 <Link to="/home" className="text-white hover:text-blue-400 transition-colors">
                   Home
@@ -42,7 +42,7 @@ function App() {
           </nav>
         </header>
 
-        <main className="container mx-auto px-4 py-8">
+        <main className="">
           <Routes>
             <Route path="/" element={<Navigate to="/about" replace />} />
             <Route path="/home" element={<Home />} />

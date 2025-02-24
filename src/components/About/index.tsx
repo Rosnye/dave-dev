@@ -7,8 +7,8 @@ interface Skill {
 
 const About = () => {
     return (
-        <div className="flex md:flex-row flex-col md:justify-center items-center text-white p-2 md:my-4 md:p-4">
-            <div className="flex flex-col items-center justify-center text-white m-4 p-4 text-justify w-full md:w-1/2">
+        <div className="flex md:flex-row flex-col md:justify-center items-center text-white bg-pink">
+            <div className="flex flex-col items-center justify-center text-white p-4 text-justify w-full md:w-1/2 bg-darkBlue">
                 <h1 className="text-center text-2xl font-bold underline">About Me</h1>
 
                 <h2 className="text-center text-xl font-bold underline">David Fletes Esparza</h2> 
