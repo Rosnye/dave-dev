@@ -9,9 +9,9 @@ const Contact = () => {
         console.log(name, email, message);
     }
     return (
-        <div className="flex flex-col items-center justify-center text-white border-2 border-white rounded-md p-4">
-            <h1>Contact</h1>
-            <form className="flex flex-col items-center justify-center" onSubmit={handleSubmit}> 
+        <div className="flex flex-col items-center justify-center text-white rounded-md p-4">
+            <h1 className="text-4xl">Contact me</h1>
+            <form className="flex flex-col items-center justify-center text-black" onSubmit={handleSubmit}> 
                 <input className="border-2 border-white rounded-md p-2 m-2" type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)}    />
                 <input className="border-2 border-white rounded-md p-2 m-2" type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                 <textarea className="border-2 border-white rounded-md p-2 m-2" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} />
