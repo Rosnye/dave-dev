@@ -34,7 +34,7 @@ const About = () => {
                 {skillsData.skills.map((skill: Skill, index: number) => (
                     <>  
                         <div key={skill.name} className="flex flex-col items-center p-4">
-                            <img src={`../src/assets/${skill.image}`} alt={skill.name} className="rounded md:h-16 md:w-16 h-10 w-10 hover:scale-110 transition-all duration-300" />
+                            <img src={`/src/assets/${skill.image}`} alt={skill.name} className="rounded md:h-16 md:w-16 h-10 w-10 hover:scale-110 transition-all duration-300" />
                             <h2 className="text-center text-lg font-Barlow mt-2">{skill.name}</h2>
                         </div>
                         {(index + 1) % 3 === 0 && <div className="w-full mt-4"></div>}
