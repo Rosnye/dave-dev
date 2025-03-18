@@ -13,7 +13,7 @@ function App() {
         <header className="bg-darkerBlue">
           <nav className="flex md:justify-between justify-center items-center container mx-auto px-4 py-3">
             <h1 className="hidden md:block text-white text-2xl font-bold">
-              <Link to="/home" className="flex flex-row items-center text-white hover:text-blue-400 hover:scale-110 transition-all">
+              <Link to="/about" className="flex flex-row items-center text-white hover:text-blue-400 hover:scale-110 transition-all">
                 DaveDev
                 <img className='max-h-8 ml-4' src="./src/assets/icon-dev-red.svg" alt="<>" />
               </Link>
