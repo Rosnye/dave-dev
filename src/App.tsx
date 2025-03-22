@@ -8,14 +8,14 @@ function App() {
   
 
   return (
-    <Router basename="/dave-dev">
+    <Router basename="/">
       <div className="min-h-dvh bg-darkBlue">
         <header className="bg-darkerBlue">
-          <nav className="flex md:justify-between justify-center items-center container mx-auto px-4 py-3">
-            <h1 className="hidden md:block text-white text-2xl font-bold">
+          <nav className="flex sm:justify-between justify-end items-center container mx-auto px-4 py-3">
+            <h1 className="hidden sm:block  text-white text-2xl font-bold">
               <Link to="/about" className="flex flex-row items-center text-white hover:text-blue-400 hover:scale-110 transition-all">
                 DaveDev
-                <img className='max-h-8 ml-4' src="./src/assets/icon-dev-red.svg" alt="<>" />
+                <img className='max-h-8 ml-4' src="../images/icon-dev-red.svg" alt="<>" />
               </Link>
             </h1>
             <ul className="flex gap-6 items-center justify-center text-xl">
