@@ -24,7 +24,7 @@ const About = () => {
                     </p>
                 </div>
                 <div>
-                    <img className="hidden xl:block ml-4 rounded-2xl w-3/4 object-fit" src="../images/Manzanillo18.jpg" alt="Profile picture" />
+                    <img className="hidden xl:block ml-4 rounded-2xl w-3/4 object-fit" src="../images/Manzanillo18_comp.jpg" alt="Profile picture" />
                 </div>
 
             </div>

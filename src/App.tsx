@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom'
-//import Home from "./components/Home"
-//import Contact from "./components/Contact"
+import Home from "./components/Home"
+import Contact from "./components/Contact"
 import About from "./components/About"
-//import Projects from './components/Projects'
+import Projects from './components/Projects'
 import NotFound from './components/NotFound'
 function App() {
   
@@ -19,7 +19,7 @@ function App() {
               </Link>
             </h1>
             <ul className="flex gap-6 items-center justify-center text-xl">
-              {/*<li>
+              <li>
                 <Link to="/home" className="text-white hover:text-blue-400 transition-colors">
                   Home
                 </Link>
@@ -33,7 +33,7 @@ function App() {
                 <Link to="/contact" className="text-white hover:text-blue-400 transition-colors">
                   Contact
                 </Link>
-              </li> */}
+              </li> 
               <li>
                 <Link to="/about" className="text-white hover:text-blue-400 transition-colors">
                   About
@@ -46,9 +46,9 @@ function App() {
         <main className="">
           <Routes>
             <Route path="/" element={<Navigate to="/about" replace />} />
-{/*         <Route path="/home" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/contact" element={<Contact />} /> 
             <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
