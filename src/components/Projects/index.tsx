@@ -4,6 +4,7 @@ interface project {
   name: string;
   image: string;
   dir: string;
+  description: string;
 }
 
 const Projects = () => {
@@ -15,9 +16,10 @@ const Projects = () => {
             <div className="flex flex-wrap justify-evenly items-center text-white m-4 p-4 text-justify w-full md:w-1/2">
                 {projectData.skills.map((project: project, index: number) => (
                     <>  
-                        <a href={project.dir} key={project.name} className="flex flex-col items-center p-4">
-                            <img src={`../images/${project.image}`} alt={project.name} className="rounded  hover:scale-110 transition-all duration-300" />
+                        <a href={project.dir} key={project.name} className="flex flex-col items-center p-4 hover:scale-105 transition-all duration-300">
+                            <img src={`../images/${project.image}`} alt={project.name} className="rounded" />
                             <h2 className="text-center text-lg font-Barlow mt-2">{project.name}</h2>
+                            <p>{project.description}</p>
                         </a>
                         {(index + 1) % 3 === 0 && <div className="w-full mt-4"></div>}
                     </>
